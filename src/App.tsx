@@ -1,6 +1,5 @@
 import { useEffect } from "react";
-import "./App.css";
-import { Button } from "./components/ui/button";
+import ThemePreview from "./components/ThemePreview";
 
 function App() {
   useEffect(() => {
@@ -20,11 +19,7 @@ function App() {
       document.head.appendChild(newMeta);
     }
   }, []);
-  return (
-    <div className="flex justify-center items-center h-screen">
-      <Button>test button</Button>
-    </div>
-  );
+  return <ThemePreview />;
 }
 
 export default App;
